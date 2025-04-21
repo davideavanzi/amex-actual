@@ -1,0 +1,7 @@
+---
+services:
+  actual-autoamex:
+    build: .
+    env_file: .env
+    restart: always
+    command: ["node", "src/job.js"]  # Default entrypoint (scheduling job)

@@ -1,0 +1,8 @@
+.env
+.vscode
+.idea
+.venv
+
+package-lock.json
+node_modules
+tests

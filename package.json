@@ -1,0 +1,15 @@
+{
+    "name": "actual-importer",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "src/job.js",
+    "dependencies": {
+      "@actual-app/api": "^25.4.0",
+      "dotenv": "^16.0.3",
+      "html-to-text": "^9.0.3",
+      "imap": "^0.8.19",
+      "mailparser": "^3.6.5",
+      "node-cron": "^3.0.2"
+    }
+  }
+  
