@@ -41,10 +41,16 @@ export function extractTransactionInfoFromHTML(html) {
 
 // Normalize date if needed
   if (date && /^\d{2}-[a-z]{3}-\d{4}$/i.test(date)) {
-    const monthMap = {
-      jan: '01', feb: '02', mar: '03', apr: '04', may: '05', jun: '06',
-      jul: '07', aug: '08', sep: '09', oct: '10', nov: '11', dec: '12',
-    };
+    
+  const monthMap = {
+    // English
+    jan: '01', feb: '02', mar: '03', apr: '04', may: '05', jun: '06',
+    jul: '07', aug: '08', sep: '09', oct: '10', nov: '11', dec: '12',
+    // Italian
+    gen: '01', feb: '02', mar: '03', apr: '04', mag: '05', giu: '06',
+    lug: '07', ago: '08', set: '09', ott: '10', nov: '11', dic: '12'
+  };
+
 
     const [d, mon, y] = date.toLowerCase().split('-');
     const m = monthMap[mon];
